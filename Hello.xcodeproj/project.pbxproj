@@ -16,8 +16,9 @@
 		CCADC1021D3809B8007A1A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCADC1001D3809B8007A1A9F /* Main.storyboard */; };
 		CCADC1041D3809B8007A1A9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCADC1031D3809B8007A1A9F /* Assets.xcassets */; };
 		CCADC1071D3809B8007A1A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCADC1051D3809B8007A1A9F /* LaunchScreen.storyboard */; };
-		CCADC1111D380B8F007A1A9F /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCADC10F1D380B78007A1A9F /* HelloKit.framework */; };
-		CCADC1121D380B8F007A1A9F /* HelloKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCADC10F1D380B78007A1A9F /* HelloKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCADC1161D3814C3007A1A9F /* HelloKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCADC0E71D38086D007A1A9F /* HelloKit.framework */; };
+		CCADC1171D3814C3007A1A9F /* HelloKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCADC0E71D38086D007A1A9F /* HelloKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CCADC1191D3815AA007A1A9F /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCADC1181D3815AA007A1A9F /* Hello.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CCADC1121D380B8F007A1A9F /* HelloKit.framework in Embed Frameworks */,
+				CCADC1171D3814C3007A1A9F /* HelloKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +59,7 @@
 		CCADC1031D3809B8007A1A9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCADC1061D3809B8007A1A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCADC1081D3809B8007A1A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCADC10F1D380B78007A1A9F /* HelloKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HelloKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Hello-bbimpraamhijebdosrsehalsxamt/Build/Products/Debug-iphonesimulator/HelloKit.framework"; sourceTree = "<group>"; };
+		CCADC1181D3815AA007A1A9F /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCADC1111D380B8F007A1A9F /* HelloKit.framework in Frameworks */,
+				CCADC1161D3814C3007A1A9F /* HelloKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +107,7 @@
 				CCADC0F21D3808F3007A1A9F /* HelloViewController.swift */,
 				CCADC0F41D38090A007A1A9F /* HelloView.storyboard */,
 				CCADC0EC1D38086D007A1A9F /* Info.plist */,
+				CCADC1181D3815AA007A1A9F /* Hello.swift */,
 			);
 			path = HelloKit;
 			sourceTree = "<group>";
@@ -113,7 +115,6 @@
 		CCADC0FB1D3809B8007A1A9F /* HelloApp */ = {
 			isa = PBXGroup;
 			children = (
-				CCADC10F1D380B78007A1A9F /* HelloKit.framework */,
 				CCADC0FC1D3809B8007A1A9F /* AppDelegate.swift */,
 				CCADC0FE1D3809B8007A1A9F /* ViewController.swift */,
 				CCADC1001D3809B8007A1A9F /* Main.storyboard */,
@@ -238,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCADC0F11D38088C007A1A9F /* HelloView.swift in Sources */,
+				CCADC1191D3815AA007A1A9F /* Hello.swift in Sources */,
 				CCADC0F31D3808F3007A1A9F /* HelloViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +428,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -477,6 +480,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -518,6 +522,7 @@
 				CCADC0EF1D38086D007A1A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCADC1091D3809B8007A1A9F /* Build configuration list for PBXNativeTarget "HelloApp" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				CCADC10B1D3809B8007A1A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
