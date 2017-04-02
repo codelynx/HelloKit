@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class HelloViewController: UIViewController {
+open class HelloViewController: UIViewController {
 
-	@IBOutlet public weak var helloView: HelloView!
+	@IBOutlet open weak var helloView: HelloView!
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override public func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }

@@ -9,15 +9,15 @@
 import UIKit
 
 
-public class NSHello: NSObject {
-	public func hello() {
+open class NSHello: NSObject {
+	open func hello() {
 		print("NSHello")
 	}
 }
 
 
-public class SwiftyHello {
-	public func hello() {
+open class SwiftyHello {
+	open func hello() {
 		print("SwiftyHello")
 	}
 }

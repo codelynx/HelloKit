@@ -8,11 +8,11 @@
 
 import UIKit
 
-@IBDesignable public class HelloView: UIView {
+@IBDesignable open class HelloView: UIView {
 
-    override public func drawRect(rect: CGRect) {
-		UIColor.yellowColor().set()
-		UIBezierPath(ovalInRect: self.bounds).fill()
+    override open func draw(_ rect: CGRect) {
+		UIColor.yellow.set()
+		UIBezierPath(ovalIn: self.bounds).fill()
     }
 
 }

@@ -21,8 +21,8 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
-	@IBAction func helloAction(sender: AnyObject) {
-		let bundle = NSBundle(identifier: "com.electricwoods.HelloKit")
+	@IBAction func helloAction(_ sender: AnyObject) {
+		let bundle = Bundle(identifier: "com.electricwoods.HelloKit")
 		let storyboard = UIStoryboard(name: "HelloView", bundle: bundle)
 		let viewController = storyboard.instantiateInitialViewController() as! HelloViewController
 		self.navigationController?.pushViewController(viewController, animated: true)
